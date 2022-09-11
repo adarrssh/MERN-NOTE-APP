@@ -9,6 +9,7 @@
   position: absolute;
   left: 10px;
   top: 80px;
+  z-index: 2;
 }
 
 .card .mb-3 label{
