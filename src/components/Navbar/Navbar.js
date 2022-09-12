@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react'
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import './Navbar.css'
@@ -20,9 +20,9 @@ const Navbar = (props) => {
         Navigate('/login')
     }
 
-    const navButton = () => {
-        setnavClick(!navClick)
-    }
+    // const navButton = () => {
+    //     setnavClick(!navClick)
+    // }
 
 
 
