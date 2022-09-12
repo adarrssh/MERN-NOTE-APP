@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Home.css"
-import { useNavigate } from 'react-router'
+// import { useNavigate } from 'react-router'
 
 const Home = () => {
-  const Navigate = useNavigate();
+  // const Navigate = useNavigate();
   return (
     
       
