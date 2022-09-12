@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -8,12 +9,12 @@ const Navbar = (props) => {
     const dispatch = useDispatch();
     const [navClick, setnavClick] = useState(false)
     const Navigate = useNavigate();
-    let Location = useLocation();
+    // let Location = useLocation();
 
     const logout = () => {
         localStorage.clear('token');
         dispatch(clearNote())
-        props.showAlert("Logged out","success")
+        props.showAlert("Logged out", "warning")
         setnavClick(!navClick)
 
         Navigate('/login')
@@ -26,45 +27,45 @@ const Navbar = (props) => {
 
 
     return (
-        <div className='home-body'>
 
-            <div className="home-navbar">
-                <div className="home-logo">
-                    <div>My <span className='n-r'>Notes</span></div>
-                </div>
-                <div className={`home-nav ${navClick ? "" : "h-nav v-nav"}`}>
-                    <div className={`home-nav-links ${Location.pathname ===  ('/home')? "n-r" : ""}`} onClick={() => {
-                        Navigate('/home')
-                        setnavClick(!navClick)
-                    }}>Home</div>
-                    <div className={`home-nav-links ${Location.pathname === "/notes" ? "n-r" : ""}`} onClick={() => {
-                        Navigate('/notes')
-                        setnavClick(!navClick)
-                    }}>Notes</div>
-                    <div className={`home-nav-links ${Location.pathname === "/login" ? "n-r" : ""}`} onClick={() => {
-                        Navigate('/login')
-                        setnavClick(!navClick)
-                    }
-                    }>Login</div>
-                    <div className={`home-nav-links ${Location.pathname === "/about" ? "n-r" : ""}`} onClick={() => {
-                        Navigate('/about')
-                        setnavClick(!navClick)
-                    }}>About</div>
-                </div>
-                <div className={`home-account ${navClick ? "" : "h-nav v-nav"}`}>
-                    <button className='account-btn' onClick={logout}>Logout</button>
-                </div>
+        <div className="home-body">
 
-                <div onClick={navButton} className={`burger-line ${navClick?"rotate-burger":""}`}>
-                    <div className="lines"></div>
-                    <div className="lines"></div>
-                    <div className="lines"></div>
+            <nav className="navbar navbar-expand-lg">
+                <div className="container-fluid white">
+                    <a className="navbar-brand white">My Notes</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link  white" aria-current="page"  onClick={()=>{Navigate("/")}}>Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link white" onClick={()=>{Navigate("/notes")}}>Notes</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link white" onClick={()=>{Navigate("/about")}}>About</a>
+                            </li>
+                            <li className="nav-item invisible  ">
+                            <button className="btn btn-outline-light mx-3"  onClick={()=>{Navigate("/login")}}>Login</button>
+                            </li>
+                            <li className="nav-item invisible">
+                            <button className="btn btn-outline-warning">Search</button>
+                            </li>
+                        </ul>
+                        <form className="d-flex" role="search">
+                        <button className="btn btn-outline-light mx-3"  onClick={(e)=>{ 
+                            e.preventDefault()
+                            Navigate("/login")}}>Login</button>
+
+                            <button className="btn btn-outline-light"  onClick={(e)=>{
+                                e.preventDefault()
+                                logout()}}>Logout</button>
+                        </form>
+                    </div>
                 </div>
-
-            </div>
-            <div className="nav-greyline">
-
-            </div>
+            </nav>
         </div>
     )
 }

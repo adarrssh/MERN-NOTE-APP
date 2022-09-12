@@ -1,6 +1,6 @@
 .card-grey-line{
   margin-top: 10px;
-  background-color: rgb(241, 240, 240);
+  background-color: rgb(41, 52, 172);
   height: 2px;
   width: 100%;
 }
@@ -17,7 +17,9 @@
 }
 
 .addNote-body .card {
-  border: 1px solid #0d6efd;
+  color: white;
+  border: 1px solid white;
+  background:none;
   height: 400px;
   width: 500px;
   position: absolute;
@@ -25,6 +27,28 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+.addNote-body input{
+  background: none;
+  color: white;
+}
+
+.addNote-body input:focus{
+  border: none;
+  color: white;
+  background: none;
+}
+
+
+.addNote-body textarea{
+  background: none;
+  color: white;
+}
+
+.addNote-body textarea:focus{
+  color: white;
+  background: none;
 }
 
 @media only screen and (max-width:600px){

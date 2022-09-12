@@ -41,7 +41,7 @@
   }
 
   .l-heading h1{
-    color: #0d6efd;
+    color:white;
   }
   
   .form-div {
@@ -75,7 +75,7 @@
   }
 
   .acc-load h1{
-    color: rgb(80, 84, 84);
+    color: white;
   }
 
   .inp p{
@@ -84,11 +84,12 @@
   
   .l-body .form-div input {
     border: 1px solid #0d6efd;
+    background: none;
     border-radius: 8px;
     padding: 8px;
     width: 95%;
     height: 2.4rem;
-    color: #000;
+    color: white;
     font-size: 1.2rem;
   }
   
@@ -96,6 +97,7 @@
     border: 2px solid rgb(30, 80, 168);
     outline: none;
     font-size: 1.2rem;
+    background: nones;
   }
   
   .submit {
@@ -103,9 +105,9 @@
     width: 78%;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid rgb(30, 80, 168);
-    background-color: white;
-    color: rgb(30, 80, 168);;
+    border: 1px solid rgb(255, 255, 255);
+    background:none;
+    color: white;
     cursor: pointer;
     font-size: 1.1rem;
   }
@@ -116,7 +118,7 @@
   }
   
   .l-main p {
-    color: black;
+    color:white;
   }
   
   .l-main span {

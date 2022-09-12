@@ -8,7 +8,8 @@ const Home = () => {
     
       
       <div className="home-main">
-        <div className="home-text text-anim">
+        hi
+        {/* <div className="home-text text-anim">
           <p className='animation-text'> <span className='red'>Create.</span> <span className='white'>Organize.</span> <br />
           <span className='white'>Share.</span></p>
           <p className='animation-text desc'>A simple, lightweight and portable note App.</p>
@@ -19,7 +20,7 @@ const Home = () => {
         </div>
         <div className="note-image img-anim">
           <img src={require('./typing.webp')} alt="" />
-        </div>
+        </div> */}
       </div>
     
   )
