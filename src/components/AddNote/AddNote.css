@@ -1,7 +1,7 @@
 .card-grey-line{
   margin-top: 10px;
   background-color: rgb(255, 255, 255);
-  height: 2px;
+  height: 1px;
   width: 100%;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .addNote-body .card {
-  color: white;
-  border: 1px solid white;
+  color: #aaa;
+  border: 1px solid #aaa;
   background:none;
   height: 400px;
   width: 500px;
@@ -31,23 +31,23 @@
 
 .addNote-body input{
   background: none;
-  color: white;
+  color: #aaa;
 }
 
 .addNote-body input:focus{
   border: none;
-  color: white;
+  color: #aaa;
   background: none;
 }
 
 
 .addNote-body textarea{
   background: none;
-  color: white;
+  color: #aaa;
 }
 
 .addNote-body textarea:focus{
-  color: white;
+  color: #aaa;
   background: none;
 }
 

@@ -38,7 +38,7 @@ const AddNote = (props) => {
 
         <div className='addNote-body'>
 
-            <button className='btn btn-outline-primary center-btn' onClick={() => { Navigate('/notes') }}>Go back to notes</button>
+            <button className='btn btn-outline-light center-btn' onClick={() => { Navigate('/notes') }}>Go back to notes</button>
 
             {/* <!-- Modal --> */}
             <div className="card">

@@ -19,19 +19,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #0d6efd;
+    border: 1px solid #aaa;
     position: relative;
   }
   
   .r-heading {
     font-size: 1.3rem;
-    color: white;
+    color: #aaa;
     position: absolute;
     top: 5%;
   }
 
   .r-heading h1{
-    color:white;
+    color:#aaa;
   }
   
   .form-div {
@@ -61,13 +61,13 @@
     padding: 8px;
     width: 95%;
     height: 2.4rem;
-    color: white;
-    border:  1px solid #0d6efd;
+    color: #aaa;
+    border:  1px solid #aaa;
     font-size: 1.2rem;
   }
   
   input:focus {
-    border: 2px solid #0d6efd;
+    border: 2px solid #aaa;
     outline: none;
     font-size: 1.2rem;
   }
@@ -77,7 +77,7 @@
     width: 78%;
     padding: 8px;
     border-radius: 8px;
-    color:white;
+    color:#aaa;
     cursor: pointer;
     font-size: 1.1rem;
   }
@@ -97,16 +97,16 @@
 
   
   .submit:hover {
-    background-color:#0d6efd;
-    color: white
+    background-color:#aaa;
+    color: #111;
   }
   
   .r-main p{
-    color:white;
+    color:#aaa;
   }
   
   .r-main span{
-    color: #0d6efd;
+    color: blue;
         cursor: pointer;
   }
   

@@ -3,7 +3,7 @@
   --bgcolor: #0d0634;
 }
 h1{
-  color: black;
+  color: #aaa;
 }
 
 .grey-line{
@@ -19,27 +19,29 @@ h1{
 }
 
 .heading-search button{
-  background-color: var(--bgcolor);
-  color: white;
+  background-color: #111;
+  border: 1px solid #aaa;
+  color: #aaa;
 }
 
 
 
 .heading-search button:hover{
   cursor: pointer;
-  color: black;
-  background-color: var(--bgcolor);
+  color: white;
+  
 }
 
 .col-md-6 .card{
 
-  background-color: var(--bgcolor);
-  color: white;
+  background-color: #111;
+  color: #aaa;
 }
 
 .card{
   height: 300px;
   position: relative;
+  border: 1px solid #aaa;
 }
 
 .card-text{
@@ -50,35 +52,36 @@ h1{
 
 
 .modal-content{
-  background-color: #0d0634;
-  color: white;
+  background-color: #111;
+  color: #aaa;
+  border: 1px solid #aaa;
 }
 
 .modal-content input{
-  background-color: #0d0634;
-  color: white;
+  background-color: #111;
+  color: #aaa;
 }
 
 .modal-content textarea{
-  background-color: #0d0634;
-  color: white;
+  background-color: #111;
+  color: #aaa;
 }
 
 .modal-content input:focus{
-  background-color: #0d0634;
-  color: white;
+  background-color: #111;
+  color: #aaa;
 }
 
 .modal-content textarea:focus{
-  background-color: #0d0634;
-  color: white;
+  background-color: #111;
+  color: #aaa;
 }
 
 .modal-content h5{
-  color: white;
+  color: #aaa;
 }
 form{
-  color: white;
+  color: #aaa;
 }
 
 

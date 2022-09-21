@@ -29,19 +29,19 @@
     justify-content: center;
     align-items: center;
     background-color: none;
-    border: 1px solid #0d6efd;
+    border: 1px solid #aaa;
   }
   
   .l-heading {
     font-size: 1.3rem;
-    color: #0d6efd;
+    color: #aaa;
     position: absolute;
     top: 5%;
 
   }
 
   .l-heading h1{
-    color:white;
+    color:#aaa;
   }
   
   .form-div {
@@ -75,7 +75,7 @@
   }
 
   .acc-load h1{
-    color: white;
+    color: #aaa;
   }
 
   .inp p{
@@ -83,18 +83,18 @@
   }
   
   .l-body .form-div input {
-    border: 1px solid #0d6efd;
+    border: 1px solid #aaa;
     background: none;
     border-radius: 8px;
     padding: 8px;
     width: 95%;
     height: 2.4rem;
-    color: white;
+    color: #aaa;
     font-size: 1.2rem;
   }
   
   input:focus {
-    border: 2px solid rgb(30, 80, 168);
+    border: 2px solid #aaa;
     outline: none;
     font-size: 1.2rem;
     background: nones;
@@ -105,24 +105,24 @@
     width: 78%;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid #aaa;
     background:none;
-    color: white;
+    color: #aaa;
     cursor: pointer;
     font-size: 1.1rem;
   }
   
   .submit:hover {
-    background-color:rgb(30, 80, 168);
-    color:white;
+    background-color:#aaa;
+    color:#111;
   }
   
   .l-main p {
-    color:white;
+    color:#aaa;
   }
   
   .l-main span {
-    color:rgb(30, 80, 168);
+    color:blue;
 
     cursor: pointer;
   }

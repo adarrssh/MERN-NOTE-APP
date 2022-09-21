@@ -10,7 +10,7 @@
   position: relative;
   animation: nav-load 600ms ease-in;
   z-index: 0;
-  background-color: var(--bgcolor);
+  background-color: rgb(44, 43, 43);
   animation: nav-load 600ms ease-in;
 
 }
@@ -27,7 +27,7 @@
 
 
 .white{
-  color: white;
+  color: #aaa;
 }
 
 
@@ -37,7 +37,7 @@ cursor: pointer;
 }
 
 .container-fluid span{
-  color: white;
+  color: #aaa;
 }
 
 

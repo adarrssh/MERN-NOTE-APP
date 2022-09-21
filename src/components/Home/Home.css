@@ -1,7 +1,7 @@
 body {
   --nav-load-time: 800ms;
-  background: url("../bg2.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
+  background-color: #111;;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -69,6 +69,25 @@ h5{
 }
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 @keyframes slideInLeft {
   0% {
